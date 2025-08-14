@@ -7,16 +7,15 @@ const Footer = () => {
 
             <img src={assets.logo} width={150} alt="" />
 
-            <p className='flex-1 mt-3 border-l pl-4 text-sm text-gray-500 max-sm:hidden'>All right reserved. Copyright @imagify</p>
+            <p className='flex-1 mt-3 border-l pl-4 text-sm text-gray-500 max-sm:hidden'>
+                All rights reserved. © {new Date().getFullYear()} Imagify
+            </p>
 
-                <a
-                    href="https://merchant.razorpay.com/policy/R2encVHzX96nmR/refund"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=" px-4 py-2 rounded-lg bg-gray-800 text-white hover:bg-gray-900 transition-colors duration-200 shadow"
-                >
-                    Refund Policy
-                </a>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                <a href="/privacy-policy" className="text-sm text-gray-600 hover:text-black">Privacy Policy</a>
+                <a href="/terms" className="text-sm text-gray-600 hover:text-black">Terms & Conditions</a>
+                <a href="/contact" className="text-sm text-gray-600 hover:text-black">Contact Us</a>
+            </div>
 
             <div className='flex gap-2.5'>
                 <img src={assets.facebook_icon} alt="" width={35} />

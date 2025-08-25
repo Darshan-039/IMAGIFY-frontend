@@ -9,9 +9,7 @@ import Login from './components/Login'
 import { AppContext } from './context/AppContext'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import PrivacyPolicy from './pages/PrivacyPolicy'
-import Terms from './pages/Terms'
-import Contact from './pages/Contact'
+import GeneratedImages from './pages/GeneratedImages'
 
 
 const App = () => {
@@ -29,9 +27,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/result' element={<Result />} />
           <Route path='/buy' element={<BuyCredit />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-          <Route path='/terms' element={<Terms />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/my-images' element={<GeneratedImages />} />
         </Routes>
       </main>
 
